@@ -7,6 +7,6 @@ wget -qO - https://patrick-zippenfenig.github.io/ecCodes-ubuntu/public.key | gpg
 echo "deb https://patrick-zippenfenig.github.io/ecCodes-ubuntu/ jammy main" > /etc/apt/sources.list.d/ecCodes-ubuntu.list
 wget https://apache.jfrog.io/artifactory/arrow/ubuntu/apache-arrow-apt-source-latest-jammy.deb
 apt install -y -V ./apache-arrow-apt-source-latest-jammy.deb
-apt update && apt install -y libnetcdf19 libeccodes0 bzip2 gir1.2-parquet-1.0 cdo curl
+apt update && apt install -y libnetcdf19 libeccodes0 bzip2 gir1.2-parquet-1.0 curl
 rm -rf /var/lib/apt/lists/*
 SHELL
