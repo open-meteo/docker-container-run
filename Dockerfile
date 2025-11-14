@@ -1,4 +1,4 @@
-FROM swift:6.2.0-jammy-slim
+FROM swift:6.2.1-jammy-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN <<-SHELL /bin/bash -eo pipefail
