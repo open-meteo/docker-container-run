@@ -16,6 +16,6 @@ if [[ -z "$GIR_PARQUET_PKG" ]]; then
 	echo "Unable to determine gir1.2-parquet package from libparquet-glib-dev dependencies" >&2
 	exit 1
 fi
-apt install -y tzdata libnetcdf19 libeccodes0 bzip2 "$GIR_PARQUET_PKG" curl
+apt install -y tzdata libnetcdf19 libeccodes0 "$GIR_PARQUET_PKG" curl
 rm -rf /var/lib/apt/lists/*
 SHELL
